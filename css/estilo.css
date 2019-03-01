@@ -7,17 +7,17 @@
 
 body{
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	background: #fff url(../img/fundo.png) repeat-x;
+	background: #fff url(../imagens/fundo.png) repeat-x;
 }
 
 #container {
-	width: 850px;
+	width: 750px;
 	margin: 0 auto;
 }
 
 #topo {
 	height: 150px;
-	background: url(../img/detalhe-topo.png) no-repeat right top;
+	background: url(../imagens/detalhe-topo.png) no-repeat right top;
 	padding-top: 25px;
 	/*border: 1px solid red;*/
 }
@@ -25,7 +25,7 @@ body{
 .logo {
 	width: 152px;
 	height: 66px;
-	background: url(../img/logo.png) no-repeat center;
+	background: url(../imagens/logo.png) no-repeat center;
 	text-indent: -3000px;
 }
 
@@ -63,7 +63,7 @@ ul {
 	line-height: 2.1em;
 	text-decoration: none;
 	color: #fff;
-	background: url(../img/divisor.png) no-repeat left center;
+	background: url(../imagens/divisor.png) no-repeat left center;
 }
 
 #topo ul .primeiro a {
@@ -74,78 +74,188 @@ ul {
 	color: #69001d;
 }
 
-/* Conteudo */
+body.home #navegacao a#home,
+body.brasil #navegacao a#brasil, 
+body.internacional #navegacao a#internacional,
+body.fotos #navegacao a#fotos 
+{
+	color: #fff;
+	background: #de003e;
+	cursor: text;
+}
 
-#conteudo{
-	width: 80%;
+/* Configura layout de três colunas */
+#conteudo {
 	margin-top: 60px;
-	float: right;
+	background: #f5f5f5;
 }
 
-#conteudo-principal{
-	width: 40%;
+#lateral {
+	width: 180px;
 	float: left;
+	margin: 0 0 20px -750px;
 }
 
-#conteudo-secundario{
-	width: 40%;
-	float: right;
+#primario {
+	width: 270px;
+	float: left;
+	margin: 0 0 20px 195px ;
 }
 
-#conteudo-principal-um{
-	margin-top: 10px;
-	background: #f3f3f3 url(../img/fundo-caixa.png);
+#duas-colunas #primario {
+	width: 555px;
 }
 
-#conteudo-principal-um h3{
+#uma-coluna #primario {
+	width: 750px;
+	margin: 0 0 20px 0;
+}
+
+#secundario {
+	width: 270px;
+	float: left;
+	margin: 0 0 20px 15px;
+}
+
+/*Caixa*/
+.caixa {
+	margin: 10px 0;
+	padding: 5px;
+	background: #f3f3f3 url(../imagens/fundo-caixa.png);
+}
+
+h2 {
+	font-size: 1em;
 	background: #294c71;
-	color: white;
+	color: #fff;
 	padding: 5px;
 }
 
-#conteudo-principal-um span{
-	background: #b10333;
-	color: white;
-	padding: 2px;
+.caixa-conteudo {
+	background: #fff;
+	padding: 5px;
+	margin-top: 5px;
+}
+
+/* Formatar menus laterais
+*/
+#lateral ul a {
+	font-size: 0.9em;
+	padding: 3px;
+	display: block;
+	line-height: 30px;
+	color: #000;
+	text-decoration: none;
+	border-bottom: 1px solid #f3f3f3;
+}
+
+#lateral ul a:hover {
+	background: #f9f9f9 url(../imagens/marcador.png) no-repeat left center;
+	padding-left: 20px;
+	color: #a1a1a1;
+}
+
+/* Formatando formulários
+*/
+label {
+	display: block; 
+	cursor: pointer;
+}
+
+input {
+	padding: 5px;
+	width: 125px;
+	font-size: 0.9em;
+	background-color: #fff;
+}
+
+input.submit {
+	width: 80px;
+	color: #fff;
+	background-color: #b10333;
+	border: 2px solid #870529;
+}
+
+/*Formatando imagens*/
+img.imagem-principal {
+	width: 98%;
+	border: 3px solid #dfdfdf;
+}
+
+/* Formatando cabeçalhos */
+h3 {
 	text-transform: uppercase;
+	display: inline;
+	font-size: 0.8em;
+	padding: 3px;
 }
 
-#conteudo-principal-um img{
-	width: 100%;
-	overflow: hidden;
-	border: 3px solid grey;
+.destaque h3 {
+	background: #b10333;
+	color: #fff;
 }
 
-#conteudo-principal-um .controller{
-	margin-left: 8px;
-	margin-right: 8px;
-	margin-top: 10px;
+.entrevista h3 {
+	background: #de003e;
 }
 
-/**/
-
-#conteudo-principal-dois{
-	margin-top: 10px;
-	background: #f3f3f3;
+/*Formatando lista de notícias*/
+#lista-noticias li {
+	padding: 2px;
+	border-bottom: 1px solid #ccc; 
+	height: 62px;
 }
 
-#conteudo-principal-dois h3{
+#lista-noticias li a img {
+	float: left;
+	margin: 5px;
+}
+
+#lista-noticias li a {
+	text-decoration: none;
+}
+
+#lista-noticias li a h3 {
+	font-size: 0.8em;
+	padding: 0;
+	color: #3e7ab9;
+}
+
+#lista-noticias li a p {
+	font-size: 0.7em;
+	color: #000;
+}
+
+#lista-noticias li:hover {
+	background: #eee;
+	cursor: pointer;
+}
+
+
+/*Rodape*/
+#container-rodape {
 	background: #294c71;
-	color: white;
-	padding: 5px;
+	padding: 20px;
 }
 
-#conteudo-principal-dois img{
-	float: left;
-	width: 50%;
+#rodape {
+	width: 750px;
+	margin: 0 auto;
+	color: #fff;
 }
 
-#conteudo-principal-dois p, h4{
-	float: right;
-	width: 50%;
-}
 
-#navegacao{
-	width: 20%;
-	float: left;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
