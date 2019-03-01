@@ -11,7 +11,7 @@ body{
 }
 
 #container {
-	width: 750px;
+	width: 850px;
 	margin: 0 auto;
 }
 
@@ -72,4 +72,80 @@ ul {
 
 #topo ul a:hover {
 	color: #69001d;
+}
+
+/* Conteudo */
+
+#conteudo{
+	width: 80%;
+	margin-top: 60px;
+	float: right;
+}
+
+#conteudo-principal{
+	width: 40%;
+	float: left;
+}
+
+#conteudo-secundario{
+	width: 40%;
+	float: right;
+}
+
+#conteudo-principal-um{
+	margin-top: 10px;
+	background: #f3f3f3 url(../img/fundo-caixa.png);
+}
+
+#conteudo-principal-um h3{
+	background: #294c71;
+	color: white;
+	padding: 5px;
+}
+
+#conteudo-principal-um span{
+	background: #b10333;
+	color: white;
+	padding: 2px;
+	text-transform: uppercase;
+}
+
+#conteudo-principal-um img{
+	width: 100%;
+	overflow: hidden;
+	border: 3px solid grey;
+}
+
+#conteudo-principal-um .controller{
+	margin-left: 8px;
+	margin-right: 8px;
+	margin-top: 10px;
+}
+
+/**/
+
+#conteudo-principal-dois{
+	margin-top: 10px;
+	background: #f3f3f3;
+}
+
+#conteudo-principal-dois h3{
+	background: #294c71;
+	color: white;
+	padding: 5px;
+}
+
+#conteudo-principal-dois img{
+	float: left;
+	width: 50%;
+}
+
+#conteudo-principal-dois p, h4{
+	float: right;
+	width: 50%;
+}
+
+#navegacao{
+	width: 20%;
+	float: left;
 }
